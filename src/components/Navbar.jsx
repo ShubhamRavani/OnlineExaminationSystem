@@ -1,19 +1,10 @@
 function Navbar() {
   return (
-    <div className="py-2 mx-2 space-x-6 border-b-2">
-      <button className="px-12 py-2 font-serif text-white bg-blue-500 rounded-md">
-        All Sections
-      </button>
-      <button className="px-12 py-2 font-serif text-white bg-blue-500 rounded-md">
-        PHYSICS
-      </button>
-      <button className="px-12 py-2 font-serif text-white bg-blue-500 rounded-md">
-        CHEMISTRY
-      </button>
-      <button className="px-12 py-2 font-serif text-white bg-blue-500 rounded-md">
-        MATHS
-      </button>
-    </div>
+    <>
+      <div className="text-center font-bold text-white text-2xl py-3 top-bar bg-blue-600">
+        DEMO ONLINE TEST
+      </div>
+    </>
   );
 }
 

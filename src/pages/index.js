@@ -22,24 +22,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex justify-between bg-white">
-        <Toaster />
-        <div className="w-10/12 text-black bg-white">
-          <div className="fixed top-0 left-0 right-0 w-10/12 bg-slate-50">
+        <div className=" text-black bg-white">
+          <div className="fixed top-0 left-0 right-0 bg-slate-50">
             <Navbar />
           </div>
-          <div className="mt-16">{/* <Content /> */}</div>
-          <div className="fixed bottom-0 left-0 right-0 w-10/12 bg-slate-50">
+          <div className="fixed bottom-0 left-0 right-0 bg-slate-50">
             <Footer setValue={setColor} color={color}></Footer>
           </div>
-          <div>
+          <div className="mt-16 bg-slate-50">
             <Homepage />
           </div>
         </div>
-        <div className="fixed top-0 right-0 w-2/12 bg-white">
-          <div>
-            <Sidebar value={color}></Sidebar>
-          </div>
-        </div>{" "}
       </main>
     </>
   );

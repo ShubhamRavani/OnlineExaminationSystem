@@ -2,15 +2,27 @@ import Image from "next/image";
 
 function Sidebar({ value }) {
   return (
-    <div className="mx-3 mb-2 text-black">
-      <div className="flex items-center w-full space-x-5 bg-blue-200 border border-gray-500 rounded-md">
-        <img src="" alt="User Image" className="w-5/12 h-24 rounded-md" />
-        <div>
-          <p>Time: 01:00:00</p>
-          <p>Shubham Ravani</p>
+    <div className="inline-block font-semibold rounded-lg w-full h-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 bg-blue-100 border border-gray-500 rounded-md">
+        <Image
+          className="ml-1 mt-1 mb-1 rounded-lg"
+          src="/user.svg"
+          width={100}
+          height={100}
+          alt="User Image"
+        />
+        <div className="text-sm">
+          <p>
+            Time
+            <br /> Left:{" "}
+          </p>
+          <p className="ml-2"> 02:39:29</p>
+
+          <div className="mt-4 italic">Shubham Ravani</div>
         </div>
       </div>
-      <div className="my-2 bg-blue-200 border border-gray-500 rounded-md h-[300px]">
+
+      <div className="my-2 mt-2 bg-blue-200 border border-gray-500 rounded-md h-[240px]">
         <p className="py-1 pl-2 text-lg text-white bg-blue-400 rounded-t-md">
           Question Pallete
         </p>
@@ -27,7 +39,7 @@ function Sidebar({ value }) {
           <button className="py-1 border border-white bg-slate-300">10</button>
         </div>
       </div>
-      <div className="my-2 bg-blue-200 border border-gray-500 rounded-md h-72">
+      <div className="my-2 mt-2 bg-blue-200 border border-gray-500 rounded-md h-[270px]">
         <p className="py-1 pl-2 text-lg text-white bg-blue-400 rounded-t-md">
           Legend (Click to View)
         </p>
@@ -54,7 +66,7 @@ function Sidebar({ value }) {
             10 All Questions
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-2 pt-3 mx-2 mt-3 border-t-2 border-white">
+        <div className="grid grid-cols-2 gap-1 pt-2 mx-2 mt-2 border-t-2 border-white">
           <button
             className={`py-1   ${value ? value : "bg-blue-500"} rounded-md`}
           >
